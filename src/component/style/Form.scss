@@ -1,0 +1,38 @@
+.Form {
+  background: #000;
+  padding: 0 2rem;
+  form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: auto;
+
+    label {
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+    input,
+    textarea {
+      margin-bottom: 1rem;
+      padding: 0.8rem 1.2rem;
+      font-size: 1.2rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.1);
+      color: #f4f4f4;
+    }
+    .submit {
+      cursor: pointer;
+      transition: 0.2s linear;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .Form {
+    padding: 0 1.4rem;
+  }
+}

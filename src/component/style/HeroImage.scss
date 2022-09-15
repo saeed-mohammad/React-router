@@ -1,0 +1,47 @@
+.heroImg {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 60vh;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url("../Assets/heroImg.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .heroImg {
+    .content {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
